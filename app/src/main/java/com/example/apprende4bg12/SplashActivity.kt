@@ -1,6 +1,7 @@
 package com.example.apprende4bg12
 
 import android.animation.Animator
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import com.google.android.material.snackbar.Snackbar
@@ -35,7 +36,8 @@ class SplashActivity : AppCompatActivity() {
             }
 
             override fun onAnimationEnd(animation: Animator?) {
-                Log.d("hola","animacion finalizada")
+                val intent = Intent(applicationContext, LoginActivity::class.java)
+                startActivity(intent)
             }
 
             override fun onAnimationCancel(animation: Animator?) {
