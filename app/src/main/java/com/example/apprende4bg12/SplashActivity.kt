@@ -59,6 +59,7 @@ class SplashActivity : AppCompatActivity() {
 
             override fun onAnimationEnd(animation: Animator?) {
                 Log.d("golas","finalizado animacion 2")
+
             }
 
             override fun onAnimationCancel(animation: Animator?) {

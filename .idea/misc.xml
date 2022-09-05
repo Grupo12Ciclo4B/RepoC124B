@@ -3,15 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/ANDROID/RepoC124B/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2955" />
-        <entry key="..\:/ANDROID/RepoC124B/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/ANDROID/RepoC124B/app/src/main/res/layout/activity_splash.xml" value="0.3066123188405797" />
-        <entry key="..\:/ANDROID/RepoC124B/app/src/main/res/layout/fragment_login.xml" value="0.296195652173913" />
-        <entry key="..\:/ANDROID/RepoC124B/app/src/main/res/layout/login.xml" value="0.296195652173913" />
-        <entry key="..\:/ANDROID/RepoC124B/app/src/main/res/layout/reset_password.xml" value="0.296195652173913" />
-        <entry key="..\:/ANDROID/RepoC124B/app/src/main/res/layout/sign_up.xml" value="0.296195652173913" />
+        <entry key="..\:/Users/USUARIO/Desktop/App/RepoC124B/app/src/main/res/layout/activity_login.xml" value="0.3509963768115942" />
+        <entry key="..\:/Users/USUARIO/Desktop/App/RepoC124B/app/src/main/res/layout/activity_signup.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/USUARIO/Desktop/App/RepoC124B/app/src/main/res/layout/activity_splash.xml" value="0.358695652173913" />
-        <entry key="..\:/Users/USUARIO/Desktop/App/RepoC124B/app/src/main/res/layout/login.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/USUARIO/Desktop/App/RepoC124B/app/src/main/res/layout/fragment_login.xml" value="0.3509963768115942" />
+        <entry key="..\:/Users/USUARIO/Desktop/App/RepoC124B/app/src/main/res/layout/login.xml" value="0.18654434250764526" />
         <entry key="..\:/Users/USUARIO/Desktop/App/RepoC124B/app/src/main/res/layout/reset_password.xml" value="0.358695652173913" />
         <entry key="..\:/Users/USUARIO/Desktop/App/RepoC124B/app/src/main/res/layout/sign_up.xml" value="0.358695652173913" />
         <entry key="app/src/main/res/layout/login.xml" value="0.1956521739130435" />
