@@ -38,6 +38,7 @@ class SplashActivity : AppCompatActivity() {
             override fun onAnimationEnd(animation: Animator?) {
                 val intent = Intent(applicationContext, LoginActivity::class.java)
                 startActivity(intent)
+                finish()
             }
 
             override fun onAnimationCancel(animation: Animator?) {
@@ -59,6 +60,7 @@ class SplashActivity : AppCompatActivity() {
 
             override fun onAnimationEnd(animation: Animator?) {
                 Log.d("golas","finalizado animacion 2")
+
             }
 
             override fun onAnimationCancel(animation: Animator?) {
