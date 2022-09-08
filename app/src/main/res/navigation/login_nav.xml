@@ -9,5 +9,36 @@
         android:id="@+id/loginFragment"
         android:name="com.example.apprende4bg12.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/LoginToSignup"
+            app:destination="@id/signUpFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/LoginToRestarPassword"
+            app:destination="@id/restarPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.apprende4bg12.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/SignupToLogin"
+            app:destination="@id/loginFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/restarPasswordFragment"
+        android:name="com.example.apprende4bg12.RestarPasswordFragment"
+        android:label="fragment_restar_password"
+        tools:layout="@layout/fragment_restar_password" >
+        <action
+            android:id="@+id/RestarPasswordToLogin"
+            app:destination="@id/loginFragment" />
+    </fragment>
 </navigation>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav"
+    app:startDestination="@id/coursesFragment">
+
+    <fragment
+        android:id="@+id/coursesFragment"
+        android:name="com.example.apprende4bg12.CoursesFragment"
+        android:label="@string/course_label"
+        tools:layout="@layout/fragment_courses" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.apprende4bg12.HomeFragment"
+        android:label="@string/home_label"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/logoutFragment"
+        android:name="com.example.apprende4bg12.LogoutFragment"
+        android:label="@string/logout_label"
+        tools:layout="@layout/fragment_logout" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.apprende4bg12.SettingsFragment"
+        android:label="@string/settings_label"
+        tools:layout="@layout/fragment_settings" />
+</navigation>
