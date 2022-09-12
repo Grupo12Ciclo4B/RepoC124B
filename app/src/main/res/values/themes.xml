@@ -44,6 +44,28 @@
     <item name="cornerSize">@dimen/corner_size_lg</item>
 </style>
 
+
+    <style name="textoTitulo" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/primaryVariant</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="fontWeight">700</item>
+    </style>
+    <style name="textoTitulo2" parent="">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">@dimen/title_category</item>
+        <item name="android:textColor">@color/primaryVariant</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="fontWeight">700</item>
+    </style>
+
+    <style name="textoParrafo" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">@dimen/parrafo_text</item>
+        <item name="android:textColor">@color/secondaryText</item>
+        <item name="fontWeight">700</item>
+    </style>
+
 <style name="Button.Mintic" parent="TextAppearance.MaterialComponents.Button">
     <item name="fontFamily">@font/poppins_bold</item>
     <item name="android:textSize">@dimen/button_text_size</item>
