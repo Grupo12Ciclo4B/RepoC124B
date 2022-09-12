@@ -6,4 +6,9 @@
     <dimen name="corner_size_md">8dp</dimen>
     <dimen name="corner_size_lg">4dp</dimen>
     <dimen name="button_text_size">12sp</dimen>
+    <dimen name="parrafo_text">13dp</dimen>
+    <dimen name="title_category">19dp</dimen>
+    <dimen name="banner_size">148dp</dimen>
+    <dimen name="big_margin">30dp</dimen>
+    <dimen name="icon_category_size">75dp</dimen>
 </resources>
