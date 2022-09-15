@@ -48,9 +48,10 @@ class CoursesFragment : Fragment() {
             binding.coursesFragmentTitle.text = args.name
             coursesList = originalList.filter { x -> x.description == args.name }
         }
-        binding.coursesFragmentSearch.setAdapter(
+
+        binding.coursesFragmentSearchAutocomplete.setAdapter(
             ArrayAdapter(requireContext(), android.R.layout.simple_dropdown_item_1line, categories))
-        binding.coursesFragmentSearch.setOnItemClickListener{ parent, view, position, id ->
+        binding.coursesFragmentSearchAutocomplete.setOnItemClickListener{ parent, view, position, id ->
             val category = categories [position]
             if(category != "Todos")
                 coursesList = originalList.filter { x -> x.description == category }
