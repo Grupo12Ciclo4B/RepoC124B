@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".CoursesActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="0dp"
@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.Toolbar.Primary"
-            app:title="@string/home_label"
+            app:title="@string/course_label"
             />
     </com.google.android.material.appbar.AppBarLayout>
 

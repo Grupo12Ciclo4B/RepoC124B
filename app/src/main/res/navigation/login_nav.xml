@@ -32,6 +32,7 @@
             app:popUpTo="@id/loginFragment"
             app:popUpToInclusive="false" />
     </fragment>
+
     <fragment
         android:id="@+id/restarPasswordFragment"
         android:name="com.example.apprende4bg12.RestarPasswordFragment"

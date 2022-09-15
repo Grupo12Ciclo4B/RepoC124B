@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="courses_fragment_title_container" type="id" />
+    <item name="courses_fragment_search" type="id" />
+</resources>

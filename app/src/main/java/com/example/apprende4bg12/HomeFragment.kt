@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.apprende4bg12.databinding.FragmentHomeBinding
 
@@ -73,8 +74,9 @@ class HomeFragment : Fragment() {
         )
 
         serviceAdapter.listener = object : OnServiceClickListener {
-            override fun onClick(item: ServiceModel) {
-                Log.d("item seleccionado: ", item.title)
+            override fun onClick(item: ServiceModel ) {
+                    findNavController().navigate(R.id.DevFragment)
+
             }
 
         }

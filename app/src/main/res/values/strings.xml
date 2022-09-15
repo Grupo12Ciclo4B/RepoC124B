@@ -18,9 +18,14 @@
     <string name="text_restar_password">Recuperar contraseña</string>
     <string name="send_code">Enviar código</string>
     <string name="home_label">Inicio</string>
-    <string name="course_label">Mis cursos</string>
+    <string name="course_label">Cursos</string>
     <string name="settings_label">Opciones</string>
     <string name="logout_label">Salir</string>
     <string name="category">Categorias</string>
     <string name="home_msg">Bienvenido, exiten diferentes categorías de estudio, dentro de ella se pueden elegir los cursos que deseas realizar, exitos</string>
+    <string name="cat_dev">Cursos Disponibles</string>
+    <string name="course1_name1">test</string>
+    <string name="courses_fragment_title">Nuestros Cursos</string>
+    <string name="info">Select</string>
+    <string name="search_label">Buscar</string>
 </resources>
