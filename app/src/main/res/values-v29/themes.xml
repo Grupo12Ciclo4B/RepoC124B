@@ -23,6 +23,8 @@
         </item>
         <item name="shapeAppearanceLargeComponent">@style/shapedAppearance.Mintic.LargeComponent
         </item>
+
+
         <!-- Status bar color. -->
         <item name="android:forceDarkAllowed">false</item>
         <!-- Customize your theme here. -->

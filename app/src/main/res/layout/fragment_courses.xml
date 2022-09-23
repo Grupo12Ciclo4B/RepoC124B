@@ -4,13 +4,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    tools:context=".ui.fragments.CoursesFragment">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
 
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -45,17 +47,18 @@
         app:layout_constraintTop_toBottomOf="@+id/courses_fragment_title"
         tools:ignore="MissingConstraints">
 
-<!--        <TextView-->
-<!--            android:id="@+id/courses_fragment_title_list"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/dev_fragment_banner"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            android:text="Nuestros Cursos"-->
-<!--            android:layout_marginVertical="@dimen/default_margin"-->
-<!--            android:visibility="visible"-->
-<!--            />-->
+        <TextView
+            android:id="@+id/courses_fragment_title_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/dev_fragment_banner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/text_info_fragment_courses"
+            android:layout_marginVertical="@dimen/default_margin"
+            android:visibility="gone"
+            tools:visibility="visible"
+            />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/courses_fragment_search"
@@ -93,9 +96,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/courses_fragment_title_container"
         app:layout_constraintVertical_bias="0.0"
+        tools:itemCount="5"
         tools:listitem="@layout/item_courses" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,8 +19,9 @@
     <string name="send_code">Enviar código</string>
     <string name="home_label">Inicio</string>
     <string name="course_label">Cursos</string>
-    <string name="settings_label">Opciones</string>
+    <string name="profile_label">Perfil</string>
     <string name="logout_label">Salir</string>
+    <string name="location_label">Localización</string>
     <string name="category">Categorias</string>
     <string name="home_msg">Bienvenido, exiten diferentes categorías de estudio, dentro de ella se pueden elegir los cursos que deseas realizar, exitos</string>
     <string name="cat_dev">Cursos Disponibles</string>
@@ -28,4 +29,14 @@
     <string name="courses_fragment_title">Nuestros Cursos</string>
     <string name="info">Select</string>
     <string name="search_label">Buscar</string>
+    <string name="text_info_fragment_courses">Nuestros Cursos</string>
+    <string name="Profile_base_name">Pepito Sierra Morena</string>
+    <string name="profile_base_email">correo@correo.com</string>
+    <string name="logout_text">¿Deseas cerrar sesión?, toda tu información será guardada y se conservará al iniciar sesión nuevamente</string>
+    <string name="profile_title">Perfil</string>
+    <string name="profile_text_location">¿Desea conocer los lugares donde puede conseguir la documentación de los cursos en fisíco? Dale click al siguiente botón</string>
+    <string name="invalid_credentials">Credenciales inválidas</string>
+    <string name="register_course">Se ha registrado exitosamente en este curso</string>
+    <string name="details">Infomación del curso</string>
+    <string name="settings">Los cambios han sido guardos exitosamente</string>
 </resources>

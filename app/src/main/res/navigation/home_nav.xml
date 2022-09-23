@@ -7,23 +7,8 @@
 
 
     <fragment
-        android:id="@+id/DevFragment"
-        android:name="com.example.apprende4bg12.DevelopmentFragment"
-        android:label="Development"
-        tools:layout="@layout/fragment_development" >
-        <action
-            android:id="@+id/development"
-            app:destination="@id/DevFragment"
-            app:launchSingleTop="true"
-            app:popUpTo="@id/development"
-            app:popUpToInclusive="false" />
-    </fragment>
-
-
-
-    <fragment
         android:id="@+id/coursesFragment"
-        android:name="com.example.apprende4bg12.CoursesFragment"
+        android:name="com.example.apprende4bg12.ui.fragments.CoursesFragment"
         android:label="@string/course_label"
         tools:layout="@layout/fragment_courses">
         <argument
@@ -40,11 +25,14 @@
             app:argType="string"
             app:nullable="true"
             android:defaultValue="null" />
+        <action
+            android:id="@+id/action_coursesFragment_to_coursesDetailFragment"
+            app:destination="@id/coursesDetailFragment" />
     </fragment>
     <fragment
 
         android:id="@+id/homeFragment"
-        android:name="com.example.apprende4bg12.HomeFragment"
+        android:name="com.example.apprende4bg12.ui.fragments.HomeFragment"
         android:label="@string/home_label"
         tools:layout="@layout/fragment_home" >
         <action
@@ -54,12 +42,34 @@
 
     <fragment
         android:id="@+id/logoutFragment"
-        android:name="com.example.apprende4bg12.LogoutFragment"
+        android:name="com.example.apprende4bg12.ui.fragments.LogoutFragment"
         android:label="@string/logout_label"
         tools:layout="@layout/fragment_logout" />
     <fragment
-        android:id="@+id/settingsFragment"
-        android:name="com.example.apprende4bg12.SettingsFragment"
-        android:label="@string/settings_label"
-        tools:layout="@layout/fragment_settings" />
+        android:id="@+id/profileFragment"
+        android:name="com.example.apprende4bg12.ui.fragments.ProfileFragment"
+        android:label="@string/profile_label"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/profileToLocation"
+            app:destination="@id/locationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.example.apprende4bg12.ui.fragments.LocationFragment"
+        android:label="@string/location_label"
+        tools:layout="@layout/fragment_location">
+        <action
+            android:id="@+id/locationToProfile"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/coursesDetailFragment"
+        android:name="com.example.apprende4bg12.ui.fragments.CoursesDetailFragment"
+        android:label="@string/details"
+        tools:layout="@layout/fragment_courses_detail" >
+        <action
+            android:id="@+id/courseDetailToHome"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>

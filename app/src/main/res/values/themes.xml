@@ -59,9 +59,23 @@
         <item name="fontWeight">700</item>
     </style>
 
+    <style name="textoTitulo3" parent="">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">@dimen/parrafo_text</item>
+        <item name="android:textColor">@color/secondary</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="fontWeight">700</item>
+    </style>
+
     <style name="textoParrafo" parent="TextAppearance.MaterialComponents.Body1">
         <item name="fontFamily">@font/poppins_bold</item>
         <item name="android:textSize">@dimen/parrafo_text</item>
+        <item name="android:textColor">@color/secondaryText</item>
+        <item name="fontWeight">700</item>
+    </style>
+    <style name="textoParrafo2" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">@dimen/fab_margin</item>
         <item name="android:textColor">@color/secondaryText</item>
         <item name="fontWeight">700</item>
     </style>
@@ -71,6 +85,10 @@
     <item name="android:textSize">@dimen/button_text_size</item>
 </style>
 
+    <style name="cutImage" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
 <style name="Theme.Apprende4BG12.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
 <style name="Theme.Apprende4BG12.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
