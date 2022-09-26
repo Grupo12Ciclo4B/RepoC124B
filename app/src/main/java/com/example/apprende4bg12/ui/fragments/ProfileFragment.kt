@@ -20,6 +20,7 @@ import com.example.apprende4bg12.R
 import com.example.apprende4bg12.TAKE_PICTURE
 import com.example.apprende4bg12.checkPermission
 import com.example.apprende4bg12.data.viewmodels.LoginViewModel
+import com.example.apprende4bg12.ui.activities.LoginActivity
 import com.google.android.material.snackbar.Snackbar
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 
@@ -78,17 +79,29 @@ class ProfileFragment : Fragment() {
             if (data!=null && data.extras != null) {
                 val extras = data.extras!!
                 val image = extras["data"] as Bitmap?
-                binding.profileFragmentImage.setImageBitmap(image)
+                if(image != null) {
+                    loginViewModel.uploadImage(image)
+                }
+                //binding.profileFragmentImage.setImageBitmap(image)
             }
         }
     }
     private fun observeViewModels() {
         loginViewModel.user.observe(viewLifecycleOwner, Observer{
-            binding.profileFragmentName.text = it.name
-            binding.profileFragmentEmail.text = it.email
-            if(it.image != null){
-                Glide.with(binding.root).load(it.image).centerCrop().into(binding.profileFragmentImage)
+            if (it != null){
+                binding.profileFragmentName.text = it.name
+                binding.profileFragmentEmail.text = it.email
+                if(it.image != null){
+                    Glide.with(binding.root).load(it.image).centerCrop().into(binding.profileFragmentImage)
+                }
+            }else {
+                val intent = Intent(requireContext(), LoginActivity::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(intent)
+                requireActivity().finish()
             }
+
+
         })
     }
 

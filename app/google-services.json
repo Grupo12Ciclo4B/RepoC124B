@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "189381928660",
+    "project_id": "apprende-1",
+    "storage_bucket": "apprende-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189381928660:android:3b76b4e49f88d15f8dfd41",
+        "android_client_info": {
+          "package_name": "com.example.apprende4bg12"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189381928660-86k948dhhoon2e5886tghcnmt24m8211.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyaImdmoKdNQe90MAFSF7o5UWWXIq_UZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "189381928660-86k948dhhoon2e5886tghcnmt24m8211.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

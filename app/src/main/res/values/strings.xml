@@ -38,5 +38,7 @@
     <string name="invalid_credentials">Credenciales inválidas</string>
     <string name="register_course">Se ha registrado exitosamente en este curso</string>
     <string name="details">Infomación del curso</string>
-    <string name="settings">Los cambios han sido guardos exitosamente</string>
+    <string name="settings">Los cambios han sido guardos exitosamente</string>}
+    <string name="signup_error">Error al crear cuenta</string>
+    <string name="signup_success">Cuenta Creada Exitosamente</string>
 </resources>

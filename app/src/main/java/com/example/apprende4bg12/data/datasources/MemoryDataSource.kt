@@ -103,7 +103,8 @@ class MemoryDataSource {
             "1",
             "Adriel de los Adrieles",
             "Adrielel+kpo@correo.com",
-            "https://64.media.tumblr.com/5307bbd2c1e8d1499fc25318201b4cd7/tumblr_oidv0oQxL31vl7x77o1_1280.png"
+            "https://64.media.tumblr.com/5307bbd2c1e8d1499fc25318201b4cd7/tumblr_oidv0oQxL31vl7x77o1_1280.png",
+            "photo"
         )
     }
 

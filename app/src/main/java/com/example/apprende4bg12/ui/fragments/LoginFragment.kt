@@ -52,9 +52,9 @@ class LoginFragment : Fragment() {
             if(binding.loginEmail.text.toString().isValidEmail() && binding.loginPassword.text.toString().isValidPassword()){
 
                 loginViewModel.login(binding.loginEmail.text.toString(), binding.loginPassword.text.toString())
-//                val intent = Intent(requireContext(), HomeActivity::class.java)
-//                startActivity(intent)
-//                requireActivity().finish()
+                val intent = Intent(requireContext(), HomeActivity::class.java)
+                startActivity(intent)
+                requireActivity().finish()
             }
         }
 
