@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.apprende4bg12.data.models.CompanyModel
+import com.example.apprende4bg12.data.models.CoursesDetailModel
 import com.example.apprende4bg12.data.models.CoursesModel
 import com.example.apprende4bg12.data.models.ServiceModel
 import com.example.apprende4bg12.data.repositories.HomeRepository
@@ -23,6 +24,9 @@ class HomeViewModel(private val repo: HomeRepository):ViewModel() {
 
     private var _course: MutableLiveData<CoursesModel> = MutableLiveData()
     val course: LiveData<CoursesModel> get() = _course
+
+    private var _details: MutableLiveData<CoursesDetailModel?> = MutableLiveData()
+    val details: LiveData<CoursesDetailModel?> get() = _details
 
     fun getServices() {
         viewModelScope.launch {
@@ -44,5 +48,11 @@ class HomeViewModel(private val repo: HomeRepository):ViewModel() {
 
     fun selectedCourse(item: CoursesModel){
         _course.postValue(item)
+    }
+
+    fun getDetails(id: String){
+        viewModelScope.launch {
+            _details.postValue(repo.getDetails(id))
+        }
     }
 }

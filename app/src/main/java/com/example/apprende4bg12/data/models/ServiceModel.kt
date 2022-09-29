@@ -7,10 +7,10 @@ import java.io.FileDescriptor
 @Entity(tableName = "services")
 data class ServiceModel (
     @PrimaryKey
-    var id: String,
-    val icon: String,
-    val title: String,
-    val description: String,
+    var id: String = "",
+    var icon: String = "",
+    var title: String = "",
+    var description: String = "",
     )
 
 

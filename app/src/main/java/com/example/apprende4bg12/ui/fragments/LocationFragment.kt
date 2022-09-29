@@ -38,7 +38,7 @@ class LocationFragment : Fragment(), OnMapReadyCallback{
         super.onStart()
         val mapFragment: SupportMapFragment = childFragmentManager.findFragmentById(R.id.fragment_location_map) as SupportMapFragment
         mapFragment.getMapAsync(this)
-        observeViewModels()
+
     }
 
     override fun onMapReady(map: GoogleMap) {
@@ -50,7 +50,7 @@ class LocationFragment : Fragment(), OnMapReadyCallback{
         mMap.mapType = GoogleMap.MAP_TYPE_NORMAL
         mMap.isTrafficEnabled = true
         this.homeViewModel.getInfo()
-
+        observeViewModels()
 
     }
 

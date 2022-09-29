@@ -83,6 +83,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 }
 
+
 secrets {
     propertiesFileName = 'secrets.properties'
     defaultPropertiesFileName = 'local.properties'

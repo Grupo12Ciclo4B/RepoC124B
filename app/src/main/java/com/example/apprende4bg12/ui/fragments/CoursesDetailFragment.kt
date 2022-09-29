@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
+import com.bumptech.glide.Glide
 import com.example.apprende4bg12.R
 import com.example.apprende4bg12.data.viewmodels.HomeViewModel
 import com.example.apprende4bg12.databinding.FragmentCoursesDetailBinding
@@ -41,13 +42,24 @@ class CoursesDetailFragment : Fragment() {
 
     private fun observeViewModels() {
         homeViewModel.course.observe(viewLifecycleOwner, Observer{
+            homeViewModel.getCourses(it.id)
             binding.courseDetailFragmentName.text = it.title
             binding.courseDetailFragmentDetail.text = it.about
             binding.courseDetailFragmentType.text = it.description
             binding.courseDetailFragmentRating.rating = it.star.toFloat()
             binding.courseDetailFragmentRatingNum.text = it.star.toString()
-            binding.courseDetailFragmentImage.setImageResource(it.icon.toInt())
+            //binding.courseDetailFragmentImage.setImageResource(it.icon.toInt())
+            Glide.with(binding.root).load(it.icon).centerCrop().into(binding.courseDetailFragmentImage)
 
+        })
+        homeViewModel.details.observe(viewLifecycleOwner, Observer {
+            if(it != null){
+                binding.courseDetailFragmentRatingNum.text = it.star.toString()
+                binding.courseDetailFragmentRating.rating=(it.star/5.0).toFloat()
+                binding.courseDetailFragmentRatingNum.visibility=View.VISIBLE
+            }else{
+                binding.courseDetailFragmentRatingNum.visibility=View.GONE
+            }
         })
     }
 

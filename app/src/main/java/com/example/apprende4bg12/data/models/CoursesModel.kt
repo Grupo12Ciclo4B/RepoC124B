@@ -7,12 +7,12 @@ import java.io.FileDescriptor
 @Entity(tableName = "courses")
 data class CoursesModel (
     @PrimaryKey
-    val id: String,
-    val icon: String,
-    val title: String,
-    val description: String,
-    val star: Double,
-    val about: String
+    val id: String = "",
+    var icon: String = "",
+    val title: String = "",
+    val description: String = "",
+    val star: Double = 0.0,
+    val about: String = ""
 
 )
 
