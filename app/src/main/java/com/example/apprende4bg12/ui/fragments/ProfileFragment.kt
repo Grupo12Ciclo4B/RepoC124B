@@ -19,6 +19,7 @@ import com.example.apprende4bg12.CAMERA_PERMISSION
 import com.example.apprende4bg12.R
 import com.example.apprende4bg12.TAKE_PICTURE
 import com.example.apprende4bg12.checkPermission
+import com.example.apprende4bg12.data.viewmodels.HomeViewModel
 import com.example.apprende4bg12.data.viewmodels.LoginViewModel
 import com.example.apprende4bg12.ui.activities.LoginActivity
 import com.google.android.material.snackbar.Snackbar
@@ -76,13 +77,12 @@ class ProfileFragment : Fragment() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == TAKE_PICTURE){
-            if (data!=null && data.extras != null) {
+            if (data != null && data.extras != null) {
                 val extras = data.extras!!
                 val image = extras["data"] as Bitmap?
                 if(image != null) {
                     loginViewModel.uploadImage(image)
                 }
-                //binding.profileFragmentImage.setImageBitmap(image)
             }
         }
     }

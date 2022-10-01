@@ -1,6 +1,6 @@
 package com.example.apprende4bg12.data.models
 
-class CompanyModel (
+data class CompanyModel (
     val id: String ="",
     val name: String = "",
     val lat: Double = 0.0,

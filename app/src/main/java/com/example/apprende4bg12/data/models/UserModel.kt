@@ -4,8 +4,8 @@ data class UserModel(
     val id: String,
     val name: String,
     val email: String,
-    val image: String?,
-    val photo: String?
+    var image: String?,
+    var photo: String?
 
 )
 

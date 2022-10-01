@@ -90,9 +90,8 @@ class MemoryDataSource {
         return  CompanyModel(
             "1",
             "Apprende",
-            60.17032407155752,
-            24.950317898811033
-
+            4.693555616453505,
+            -74.06501821158434
 
         )
 
@@ -103,8 +102,8 @@ class MemoryDataSource {
             "1",
             "Adriel de los Adrieles",
             "Adrielel+kpo@correo.com",
-            "https://64.media.tumblr.com/5307bbd2c1e8d1499fc25318201b4cd7/tumblr_oidv0oQxL31vl7x77o1_1280.png",
-            "photo"
+            "https://img2.freepng.es/20190702/tl/kisspng-computer-icons-portable-network-graphics-avatar-tr-clip-directory-professional-transparent-amp-png-5d1bfa95e508d4.2980489715621147099381.jpg",
+            null
         )
     }
 

@@ -47,7 +47,7 @@ class LocationFragment : Fragment(), OnMapReadyCallback{
         mMap.uiSettings.isZoomControlsEnabled = true
         mMap.uiSettings.isZoomGesturesEnabled = true
         mMap.uiSettings.isCompassEnabled = true
-        mMap.mapType = GoogleMap.MAP_TYPE_NORMAL
+        mMap.mapType = GoogleMap.MAP_TYPE_SATELLITE
         mMap.isTrafficEnabled = true
         this.homeViewModel.getInfo()
         observeViewModels()

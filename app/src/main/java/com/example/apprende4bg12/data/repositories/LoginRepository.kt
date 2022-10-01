@@ -23,18 +23,18 @@ class LoginRepository(private val memoryDataSource: MemoryDataSource,
             throw Exception(e.message)
         }
     }
-    suspend fun logout() {
+    suspend fun logOut() {
         authService.signOut()
     }
     suspend fun getCurrentUser(): UserModel? {
         val user = authService.currentUser
-        if (user !== null) {
+        if (user != null) {
             var photo: String? = null
             if(user.photoUrl != null){
                 photo = user.photoUrl.toString()
             }
             val info = db.collection(USER_COLLECTION).document(user.uid).get().await()
-            return UserModel(user.uid,user.displayName!!,user.email!!,"", photo)
+            return UserModel(user.uid,user.displayName!!,user.email!!,info.get("email").toString(), photo)
         }
         return null
     }

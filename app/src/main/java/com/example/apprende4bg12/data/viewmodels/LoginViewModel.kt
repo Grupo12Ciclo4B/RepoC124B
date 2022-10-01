@@ -13,18 +13,16 @@ import kotlinx.coroutines.launch
 
 class LoginViewModel(private val repo: LoginRepository): ViewModel() {
 
-    private var _signUp: MutableLiveData<Boolean> = MutableLiveData()
-    val signUp: LiveData<Boolean> get() = _signUp
-
-
     private var _login: MutableLiveData<Boolean> = MutableLiveData()
     val login: LiveData<Boolean> get() = _login
+
+    private var _signUp: MutableLiveData<Boolean> = MutableLiveData()
+    val signUp: LiveData<Boolean> get() = _signUp
 
     private var _user: MutableLiveData<UserModel?> = MutableLiveData()
     val user: LiveData<UserModel?> get() = _user
 
-    private var _logout: MutableLiveData<Boolean> = MutableLiveData()
-    val logout: LiveData<Boolean> get() = _logout
+
 
     fun login(email: String, password: String){
 
@@ -49,10 +47,10 @@ class LoginViewModel(private val repo: LoginRepository): ViewModel() {
         }
     }
 
-    fun logout() {
+    fun logOut() {
         viewModelScope.launch {
             try {
-                repo.logout()
+                repo.logOut()
                 _user.postValue(null)
             }catch (e: Exception) {
             }

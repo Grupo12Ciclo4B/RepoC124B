@@ -41,7 +41,7 @@ class SplashActivity : AppCompatActivity() {
             //if (db.serviceDao().count() == 0) {
                 //db.serviceDao().insertAll(memoryDataSource.getServices())
             //}
-        //}
+       // }
         binding.splashAnimation.playAnimation()
 
         binding.splashAnimation.addAnimatorListener(object: Animator.AnimatorListener{
@@ -51,9 +51,7 @@ class SplashActivity : AppCompatActivity() {
 
             override fun onAnimationEnd(animation: Animator?) {
                 loginViewModel.currentUser()
-                val intent = Intent(applicationContext, LoginActivity::class.java)
-                startActivity(intent)
-                finish()
+
             }
 
             override fun onAnimationCancel(animation: Animator?) {
@@ -91,10 +89,10 @@ class SplashActivity : AppCompatActivity() {
         observeViewModels()
     }
     private fun observeViewModels(){
-        loginViewModel.user.observe(this, Observer { intent = Intent(applicationContext, LoginActivity::class.java)
+        loginViewModel.user.observe(this, Observer {
             var intent = Intent(applicationContext, LoginActivity::class.java)
             if(it != null) {
-                /*intent = Intent(applicationContext, HomeActivity::class.java)*/
+                intent = Intent(applicationContext, HomeActivity::class.java)
             }
             startActivity(intent)
             finish()
