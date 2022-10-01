@@ -46,7 +46,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginTop="@dimen/default_margin"
                 app:shapeAppearanceOverlay="@style/cutImage"
-                android:src="@drawable/apprende"
+                tools:src="@drawable/apprende"
                 android:scaleType="centerCrop"
                 app:strokeWidth="@dimen/stroke"
                 app:strokeColor="@color/black"

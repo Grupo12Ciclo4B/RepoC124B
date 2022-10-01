@@ -92,7 +92,7 @@ class ProfileFragment : Fragment() {
                 binding.profileFragmentName.text = it.name
                 binding.profileFragmentEmail.text = it.email
                 if(it.image != null){
-                    Glide.with(binding.root).load(it.image).centerCrop().into(binding.profileFragmentImage)
+                    Glide.with(binding.root).load(it.photo).centerCrop().into(binding.profileFragmentImage)
                 }
             }else {
                 val intent = Intent(requireContext(), LoginActivity::class.java)
